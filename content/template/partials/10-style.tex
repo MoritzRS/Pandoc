@@ -1,0 +1,30 @@
+% \usepackage{geometry}
+% \geometry{a4paper, margin=3.5cm}
+
+
+\usepackage[headsepline,footsepline]{scrlayer-scrpage}
+\newpairofpagestyles{main-pagestyle}{
+  \clearpairofpagestyles
+  \ihead{\headmark}
+  \automark{section}
+  \ofoot{\thepage}
+  \addtokomafont{pageheadfoot}{\upshape}
+}
+\pagestyle{main-pagestyle}
+
+\usepackage[default]{sourcesanspro}
+\usepackage{sourcecodepro}
+\ifxetex
+    \makeatletter
+    \defaultfontfeatures[\ttfamily]
+      { Numbers   = \sourcecodepro@figurestyle,
+        Scale     = \SourceCodePro@scale,
+        Extension = .otf }
+    \setmonofont
+      [ UprightFont    = *-\sourcecodepro@regstyle,
+        ItalicFont     = *-\sourcecodepro@regstyle It,
+        BoldFont       = *-\sourcecodepro@boldstyle,
+        BoldItalicFont = *-\sourcecodepro@boldstyle It ]
+      {SourceCodePro}
+    \makeatother
+  \fi

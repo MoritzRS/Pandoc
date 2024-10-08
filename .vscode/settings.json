@@ -1,0 +1,9 @@
+{
+	"carbon.backgroundColor": "rgba(0,0,0,0)",
+	"carbon.dropShadow": false,
+	"carbon.paddingVertical": 0,
+	"mermaid-editor.generate.type": "png",
+	"mermaid-editor.generate.quality": 10,
+	"mermaid-editor.generate.scale": 10,
+	"mermaid-editor.preview.backgroundColor": "transparent"
+}

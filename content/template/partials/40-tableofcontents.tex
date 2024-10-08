@@ -1,0 +1,17 @@
+$if(table-of-contents)$
+\setcounter{secnumdepth}{5}
+\tableofcontents
+\clearpage
+$endif$
+
+$if(list-of-figures)$
+\listoffigures
+\addcontentsline{toc}{section}{\listfigurename}
+\clearpage
+$endif$
+
+$if(list-of-tables)$
+\listoftables
+\addcontentsline{toc}{section}{\listtablename}
+\clearpage
+$endif$

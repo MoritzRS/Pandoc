@@ -1,0 +1,25 @@
+\begin{titlepage}
+    \begin{center}
+        \vspace*{2.5cm}
+
+        $if(title)$
+            $for(title)$
+                {\LARGE\bfseries $title$ \par}
+            $endfor$
+            \vspace{1.5cm}
+        $endif$
+
+
+        $if(subtitle)$
+            {\scshape\large\bfseries $subtitle$ \par}
+            \vspace{1.5cm}
+        $endif$
+        
+
+        $if(author)$
+            {\scshape\normalsize $for(author)$$author$$sep$, $endfor$ \par}
+        $endif$
+
+
+      \end{center}
+\end{titlepage}
